@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Techstack from "./Techstack";
+import Library from "./library";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
@@ -43,9 +44,12 @@ function About() {
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />
+        <h1 className="project-heading">
+          <strong className="purple">Libraries</strong> I use
+        </h1>
+        <Library />
       </Container>
     </Container>
   );
 }
-
 export default About;
