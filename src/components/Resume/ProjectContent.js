@@ -7,9 +7,9 @@ function ProjectContent(props) {
         {props.title}
       </h5>
       <p>
-      <Button href={props.link} variant="primary" size="sm" active>
-    Primary button
-  </Button>
+        <Button href={props.link} variant="primary" size="lg" active>
+          View
+        </Button>
       </p>
       <ul>
         {props.content.map((value, index) => (

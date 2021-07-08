@@ -19,21 +19,21 @@ function Resume() {
               title="Gymkhana Website for college"
               link="https://github.com/IIT-Dharwad-Tech/Gymkhana"
               content={[
-                "Lorem ipsum dolor sit amet. Et iure esse et blanditiis quis eos quia quaerat in consequatur accusamus est quidem dolor. Eum tenetur quasi sit iusto voluptates id dolor quam. Est ratione officiis in internos quos eos assumenda minima."
+                "In this project I along with my team made a website for our Gymkhana using React Js for frontend part and Node Js for backend."
               ]}
             />
             <ProjectContent
               title="Data Analysis Covid Cases"
               link="https://github.com/AtulSingh-Emyre/Data-Analysis-Covid-cases"
               content={[
-                "Lorem ipsum dolor sit amet. Et iure esse et blanditiis quis eos quia quaerat in consequatur accusamus est quidem dolor. Eum tenetur quasi sit iusto voluptates id dolor quam. Est ratione officiis in internos quos eos assumenda minima."
+                "This project is the anslysis of Covid-19 cases, where we find all the conditions on which covid cases depends like age,altitude and many more.The enire project consists of various plots,graphs and analysis on jupyter notebook using python libraries like matplotlib,pandas and keras."
               ]}
             />
             <ProjectContent
               title="Crew Brew App(Coffee choices for employee) using Flutter"
               link="https://github.com/ashishakash/portfoliowebsite"
               content={[
-                "Lorem ipsum dolor sit amet. Et iure esse et blanditiis quis eos quia quaerat in consequatur accusamus est quidem dolor. Eum tenetur quasi sit iusto voluptates id dolor quam. Est ratione officiis in internos quos eos assumenda minima."
+                "This is a simple mobile application where employee of a company could log in and choose what kind of coffee they like so that other employee could know abt their taste. It is developed using flutter for android. "
               ]}
             />
           </Col>
@@ -52,14 +52,14 @@ function Resume() {
             <Resumecontent
               title="10TH BOARD [St Peter's School,Purnea,Bihar] "
               date="2006 - 2016"
-              content={["Precentage: 10cgpa"]}
+              content={["Precentage: 10 cgpa"]}
             />
             <h3 className="resume-title">Ranks and Achivements</h3>
             <Resumecontent
               title=""
               content={[
-                `Current rating in leetcode 1524`,
-                `Current rating in codeforces  720`,
+                `Current rating in leetcode 1523`,
+                `Current rating in codeforces  730`,
                 "Secured a rank of 4662 in Google Hashcode 2021",
               ]}
             />
