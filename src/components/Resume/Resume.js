@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
+import ProjectContent from "./ProjectContent";
 import pdf from "../../Assets/ashishakash.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
@@ -14,23 +15,23 @@ function Resume() {
         <Row className="resume">
           <Col md={6} className="resume-left">
             <h3 className="resume-title">Projects</h3>
-            <Resumecontent
+            <ProjectContent
               title="Gymkhana Website for college"
-              date="June 2020 - August 2020"
+              link="https://github.com/IIT-Dharwad-Tech/Gymkhana"
               content={[
                 "Lorem ipsum dolor sit amet. Et iure esse et blanditiis quis eos quia quaerat in consequatur accusamus est quidem dolor. Eum tenetur quasi sit iusto voluptates id dolor quam. Est ratione officiis in internos quos eos assumenda minima."
               ]}
             />
-            <Resumecontent
+            <ProjectContent
               title="Data Analysis Covid Cases"
-              date="June 2020 - August 2020"
+              link="https://github.com/AtulSingh-Emyre/Data-Analysis-Covid-cases"
               content={[
                 "Lorem ipsum dolor sit amet. Et iure esse et blanditiis quis eos quia quaerat in consequatur accusamus est quidem dolor. Eum tenetur quasi sit iusto voluptates id dolor quam. Est ratione officiis in internos quos eos assumenda minima."
               ]}
             />
-            <Resumecontent
+            <ProjectContent
               title="Crew Brew App(Coffee choices for employee) using Flutter"
-              date="June 2020 - August 2020"
+              link="https://github.com/ashishakash/portfoliowebsite"
               content={[
                 "Lorem ipsum dolor sit amet. Et iure esse et blanditiis quis eos quia quaerat in consequatur accusamus est quidem dolor. Eum tenetur quasi sit iusto voluptates id dolor quam. Est ratione officiis in internos quos eos assumenda minima."
               ]}
