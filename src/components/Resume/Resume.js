@@ -1,100 +1,72 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
-import axios from "axios";
-import pdf from "../../Assets/Soumyajit-Behera.pdf";
+import pdf from "../../Assets/ashishakash.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 
 function Resume() {
-  const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
-  const [spojRank, upadteSpojRank] = useState(0);
-  const [hackerrank, upadteHackerank] = useState(0);
-  const [sem, upadateSem] = useState(0);
-  const [cgpa, upadteCgpa] = useState(0);
-
-  useEffect(() => {
-    axios
-      .get(uri)
-      .then((res) => {
-        upadteSpojRank(res.data.message[0].spojRank);
-        upadteHackerank(res.data.message[1].hackerrank);
-        upadteCgpa(res.data.message[2].cgpa);
-        upadateSem(res.data.message[3].sem);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-
   return (
     <Container fluid className="resume-section">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={pdf} target="_blank">
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">
-            <h3 className="resume-title">Experience</h3>
+            <h3 className="resume-title">Projects</h3>
             <Resumecontent
-              title="JUNIOR ML ENGINEER [Omdena]"
+              title="Gymkhana Website for college"
               date="June 2020 - August 2020"
               content={[
-                "Assembled the data from various social media platforms using Twitter, Reddit.Interpreted the collected text using word-clouds and various other factors that affect the change of sentiments of youth.",
-                " Utilized the data to find the issues using Topic Modelling and Building models using LSTM, BERT to predict the sentiments of the youth.",
-              ]}
-            />
-            <h3 className="resume-title">Extracurricular Activities</h3>
-            <Resumecontent
-              title="Web Developer [Pantheon-2019 Technical Fest of BIT Mesra]"
-              content={[
-                "Worked on creating the frontend-end of the website using Bootstrap, Javascript.",
+                "Lorem ipsum dolor sit amet. Et iure esse et blanditiis quis eos quia quaerat in consequatur accusamus est quidem dolor. Eum tenetur quasi sit iusto voluptates id dolor quam. Est ratione officiis in internos quos eos assumenda minima."
               ]}
             />
             <Resumecontent
-              title="Web Developer [Bitotsav-2020 Technical Fest of BIT Mesra]"
+              title="Data Analysis Covid Cases"
+              date="June 2020 - August 2020"
               content={[
-                "Operated on developing the frontend end of the website using Bootstrap, Javascript and backend APIs using Node.js",
+                "Lorem ipsum dolor sit amet. Et iure esse et blanditiis quis eos quia quaerat in consequatur accusamus est quidem dolor. Eum tenetur quasi sit iusto voluptates id dolor quam. Est ratione officiis in internos quos eos assumenda minima."
+              ]}
+            />
+            <Resumecontent
+              title="Crew Brew App(Coffee choices for employee) using Flutter"
+              date="June 2020 - August 2020"
+              content={[
+                "Lorem ipsum dolor sit amet. Et iure esse et blanditiis quis eos quia quaerat in consequatur accusamus est quidem dolor. Eum tenetur quasi sit iusto voluptates id dolor quam. Est ratione officiis in internos quos eos assumenda minima."
               ]}
             />
           </Col>
           <Col md={6} className="resume-right">
             <h3 className="resume-title">Education</h3>
             <Resumecontent
-              title="IMSC MATHS AND COMPUTING [BIT Mesra, Ranchi] "
-              date="2018 - Present"
-              content={[`CGPA: ${cgpa} (Till ${sem}th Sem)`]}
+              title="Electrical Engineer [IIT Dharwad] "
+              date="2019 - Present"
+              content={[`CGPA: 9.31 (Till 4th Sem)`]}
             />
             <Resumecontent
-              title="12TH BOARD [ODM Public School,Odisha]"
-              date="2015 - 2017"
-              content={["Precentage: 88%"]}
+              title="12TH BOARD [Bright Career School,Purnea,Bihar]"
+              date="2016 - 2018"
+              content={["Precentage: 93%"]}
             />
             <Resumecontent
-              title="10TH BOARD [ST Mary's School,Odisha] "
-              date="2005 - 2015"
-              content={["Precentage: 86%"]}
+              title="10TH BOARD [St Peter's School,Purnea,Bihar] "
+              date="2006 - 2016"
+              content={["Precentage: 10cgpa"]}
             />
             <h3 className="resume-title">Ranks and Achivements</h3>
             <Resumecontent
               title=""
               content={[
-                `Current rank in Spoj ${spojRank}`,
-                `Current rank in HackerRank  ${hackerrank}`,
-                "Top Performer in Code-Break 1.0",
-                "Participant in Hack-A-Bit 2019",
+                `Current rating in leetcode 1524`,
+                `Current rating in codeforces  720`,
+                "Secured a rank of 4662 in Google Hashcode 2021",
               ]}
             />
           </Col>
         </Row>
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button variant="primary" href={pdf} target="_blank">
-          <AiOutlineDownload />&nbsp;Download CV
+            <AiOutlineDownload />&nbsp;Download CV
           </Button>
         </Row>
       </Container>
