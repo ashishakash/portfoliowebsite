@@ -31,7 +31,7 @@ function Resume() {
             />
             <ProjectContent
               title="Crew Brew App(Coffee choices for employee) using Flutter"
-              link="https://github.com/ashishakash/portfoliowebsite"
+              link="https://github.com/ashishakash/crewbrew"
               content={[
                 "This is a simple mobile application where employee of a company could log in and choose what kind of coffee they like so that other employee could know abt their taste. It is developed using flutter for android. "
               ]}
@@ -52,7 +52,7 @@ function Resume() {
             <Resumecontent
               title="10TH BOARD [St Peter's School,Purnea,Bihar] "
               date="2006 - 2016"
-              content={["Precentage: 10 cgpa"]}
+              content={["CGPA: 10 "]}
             />
             <h3 className="resume-title">Ranks and Achivements</h3>
             <Resumecontent
